@@ -31,12 +31,12 @@ function draw() {
     new box(boxPos, 500, 100, 25, 'blue').draw();
 
     body.onkeydown = e => {
-        if (e.key === 'a')
+        if (e.key === 'a' || e.keyCode === 37)
         {
             boxPos = boxPos-30;
         }
 
-        if (e.key === 'd')
+        if (e.key === 'd' || e.keyCode === 39)
         {
             boxPos = boxPos+30;
         }
